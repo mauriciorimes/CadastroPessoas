@@ -1,0 +1,15 @@
+h1 {
+    color: darkgrey;    
+}
+
+#dados {
+    display: flex;
+    flex-direction: column;
+}
+
+#lblTotal {
+    color: darkgray;
+    font-size: 25px;
+}
+
+

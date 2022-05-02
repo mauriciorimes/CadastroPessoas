@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pessoas</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/stylesheet.css">
+</head>
+
+<body>
+    <h1>Cadastro de pessoas</h1>
+
+    <div id="dados">
+
+        <label>Nome: </label>
+        <input id="inpNome">
+        <br>
+        <label>Salario: </label>
+        <input id="inpSalario">
+        <br>
+
+    </div>
+
+    <main>
+        <button id="btnIncluir" class="btn btn-secondary">Incluir</button>
+        <br>
+        <br>
+        <input type="text" id="inpPesquisar" class="form-control col-md-3" placeholder="Pesquisar" />
+
+
+        <button id="btnPesquisar" class="btn btn-primary">Confirmar</button>
+        <button id="btnLimparPesquisar" class="btn btn-info mt-3">Limpar</button>
+        <br />
+        <button id="btnImportar" class="btn btn-warning">Importar</button>
+
+
+
+        <input type="text" id="inputDeleteIntervaloInicio" class="form-control col-md-3" placeholder="" />
+
+        <input type="text" id="inputDeleteIntervaloFinal" class="form-control col-md-3" placeholder="" />
+        <br>
+        <button id="botaoDeletarIntervalo" class="btn btn-outline-danger">Deletar por intervalo</button>
+        <br>
+        <br>
+
+        <table id="tbPessoa" class="table table-bordered table-dark">
+            <thead>
+                <tr>
+                    <th>
+                        ID
+                    </th>
+
+                    <th>
+                        Nome
+                    </th>
+
+                    <th>
+                        Salario
+                    </th>
+
+                    <th>
+                        Gerenciamento
+                    </th>
+                </tr>
+
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+        <label id="lblTotal"></label>
+    </main>
+
+    <script src="./js/app.js" type="module"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
